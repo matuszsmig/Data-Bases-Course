@@ -24,9 +24,9 @@ create table trip
 
 create table countries
 (
-    country_id int generated always as identity not null,
+    country int generated always as identity not null,
     country_name varchar(50),
-    constraint country_pk primary key ( country_id ) enable
+    constraint country_pk primary key ( country ) enable
 );
 
 create table reservation
@@ -51,9 +51,9 @@ alter table reservation
 add constraint reservation_chk1 check
 (status in ('N','P','C')) enable;
 
-alter table trip
+alter table COUNTRIES
 add constraint country_fk foreign key
-( country ) references countries ( country_id ) enable;
+( country ) references trip ( country ) enable;
 
 
 create table log

@@ -44,25 +44,55 @@ values  ('Novak', 'Nowak');
 insert into person(firstname, lastname)
 values ('Piotr', 'Piotrowski');
 
+insert into person(firstname, lastname)
+values ('Mariano', 'Piotowski');
+
+insert into person(firstname, lastname)
+values ('Robret', 'Lewandowski');
+
+insert into person(firstname, lastname)
+values ('Anna', 'Curie');
+
+insert into person(firstname, lastname)
+values ('Piotr', 'Cebula');
+
 -- reservation
 -- trip 1
 insert into reservation(trip_id, person_id, status)
-values (41, 21, 'P');
+values (94, 88, 'P');
 
 insert into reservation(trip_id, person_id, status)
-values (41, 22, 'N');
+values (94, 89, 'N');
 
 -- trip 2
 insert into reservation(trip_id, person_id, status)
-values (42, 21, 'P');
+values (95, 96, 'P');
 
 insert into reservation(trip_id, person_id, status)
-values (42, 24, 'C');
+values (95, 93, 'C');
 
 -- trip 3
 insert into reservation(trip_id, person_id, status)
-values (42, 24, 'P');
+values (96, 92, 'N');
 
-select * from COUNTRIES
+insert into reservation(trip_id, person_id, status)
+values (96, 90, 'N');
+
+--trip 4
+insert into reservation(trip_id, person_id, status)
+values (97, 95, 'P');
+
+insert into reservation(trip_id, person_id, status)
+values (97, 89, 'C');
+
+--trip 5
+insert into reservation(trip_id, person_id, status)
+values (98, 92, 'C');
+
+insert into reservation(trip_id, person_id, status)
+values (98, 94, 'N');
+
+
+select * from RESERVATION
 
 commit;
