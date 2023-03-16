@@ -3,6 +3,9 @@
 insert into trip(trip_name, country, trip_date, max_no_places)
 values ('Wycieczka do Paryza', 2, to_date('2022-09-12','YYYY-MM-DD'), 3);
 
+insert into trip(trip_name, country, trip_date, max_no_places)
+values ('XXXX', 2, to_date('2022-09-12','YYYY-MM-DD'), 3);
+
 insert into trip(trip_name, country, trip_date,  max_no_places)
 values ('Piękny Kraków', 1, to_date('2023-07-03','YYYY-MM-DD'), 2);
 

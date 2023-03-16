@@ -33,4 +33,5 @@ as
         on ts.TRIP_NAME = t.TRIP_NAME
     where ts.no_available_places > 0;
 
-select * from AvailableTrips;
+select * from trips;
+select * from trip;
